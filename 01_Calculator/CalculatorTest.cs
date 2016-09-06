@@ -35,12 +35,23 @@ namespace _01_Calculator
             Assert.AreEqual(18, Calculator.Sum(numbers));
 
         }
+
         [TestMethod]
         public void Multiply()
         {
-            //It multiplies two numbers
-            //It multiplies several numbers
-            throw new NotImplementedException();
+            int[] numbers = new int[] { };
+            Assert.AreEqual(1, Calculator.Multiply(numbers));
+
+            numbers = new int[2];
+
+            numbers[0] = 5;
+            numbers[1] = 3;
+
+            Assert.AreEqual(15, Calculator.Multiply(numbers)); //This part multiplies two numbers
+
+            numbers = new int[5] { 2, 4, 7, 3, 1 };
+            Assert.AreEqual(168, Calculator.Multiply(numbers)); //This part multiplies several numbers
+            
         }
         [TestMethod]
         public void Power()

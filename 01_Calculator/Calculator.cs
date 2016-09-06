@@ -25,5 +25,17 @@ namespace _01_Calculator
 
             return resultat;
         }
-    }
+
+        internal static int Multiply(int[] numbers)
+        {
+            int result = 1;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result *= numbers[i]; // "resultat *= numbers[i]" is the same as "resultat = resultat * numbers[i]"
+            }
+
+            return result;
+        }
+    }      
 }
