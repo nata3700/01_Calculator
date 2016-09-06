@@ -37,5 +37,20 @@ namespace _01_Calculator
 
             return result;
         }
+
+        internal static double Power(double v1, double v2)
+        {
+            return Math.Pow(v1, v2);
+        }
+
+        internal static int Factorial(int v1)
+        {
+            int result = 1;
+            for (int i = v1; i>= 1; i--)
+            {
+                result *= i;
+            }
+            return result;
+        }
     }      
 }
