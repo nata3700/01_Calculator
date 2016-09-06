@@ -25,9 +25,11 @@ namespace _01_Calculator
             int[] numbers = new int[] { };
             Assert.AreEqual(0, Calculator.Sum(numbers));
 
+            numbers = new int[1];
             numbers[0] = 7;
             Assert.AreEqual(7, Calculator.Sum(numbers));
 
+            numbers = new int[2];
             numbers[0] = 7;
             numbers[1] = 11;
             Assert.AreEqual(18, Calculator.Sum(numbers));
